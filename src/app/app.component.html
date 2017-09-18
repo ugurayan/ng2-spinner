@@ -1,3 +1,4 @@
-
-<smrt-spinner></smrt-spinner>
-
+<a (click)="show = !show" [hidden]="!show">Show Random</a>
+<a (click)="show = !show" [hidden]="show" >Show All</a>
+<smrt-spinner  [hidden]="show"></smrt-spinner> 
+<app-all [hidden]="!show"></app-all> 
